@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#@file
+# Tells you which site you're in.
+# Returns "" if you're not in a site.
+
+function get_site {
+  local sites_dir="${HOME}/Sites"
+  local pwd=${PWD}
+  local no_sites_dir=${pwd#$sites_dir/}
+
+  if [ "${pwd}" == "${no_sites_dir}" ] || [ -z "${no_sites_dir}" ]; then
+    echo ""
+  else
+    echo ${no_sites_dir%%/*}
+  fi
+}
+

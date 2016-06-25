@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# @file
+# Contains some git helpers
+
+# Couple simple functions
+function gc {
+  [ -z "${1}" ] && bad_msg "Gotta give me a commit message." && return 1
+  git add . --all
+  git commit -m"${1}"
+}
+
+function ggo {
+  gc ${1}
+  if  [ ${?} -eq 0 ]; then
+    git push
+  fi
+}
+

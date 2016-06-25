@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# @file
+# Contains the various messages you can use.
+
+# If we've already included this, don't include it again
+if [ -z "${MSGS_SET}" ]; then
+
+  MSGS_SET="true"
+
+  # If our bash colors aren't already set, grab them.
+  if [ -z "${RED}" ]; then
+    if [ ! -f ${HOME}/.bash_colors ]; then
+      echo -e "\nCreate a ${HOME}/.bash_colors file with at least, RED, GREEN, VIOLET, and ORANGE defined.\n"
+      exit 1
+    fi
+
+    source ${HOME}/.bash_colors
+  fi
+
+  # Errors
+  function bad_msg {
+    echo -e "\n${RED}${1}${NC}\n"
+  }
+
+  # Success!
+    function good_msg {
+    echo -e "\n${GREEN}${1}${NC}\n"
+  }
+
+  # Whatevs
+  function neutral_msg {
+    echo -e "\n${VIOLET}${1}${NC}\n"
+  }
+
+  # Confirm!
+  function confirm_msg {
+    this_msg=$(echo -e "\n${ORANGE}${1}${NC} ")
+    read -p "${this_msg}" confirm_var
+    echo "${confirm_var}"
+  }
+
+fi
+
