@@ -11,7 +11,7 @@ function gc {
 }
 
 function ggo {
-  gc ${1}
+  gc "${1}"
   if  [ ${?} -eq 0 ]; then
     git push
   fi
