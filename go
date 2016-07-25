@@ -29,6 +29,9 @@ function go {
       "mod")
         cd ${site_loc}/tufts_models
         ;;
+      "mc")
+        cd ${site_loc}/marvel_companion
+        ;;
       *)
         bad_msg "${1} is not a valid sitename."
         ;;
