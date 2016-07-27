@@ -1,0 +1,118 @@
+#!/bin/bash
+
+# @file
+# Contains aliases to go to various servers
+
+function mira {
+  case "${1}" in
+    'dev')
+      ssh hyd-dev-01.lib.tufts.edu
+      ;;
+    *)
+      ssh hyd-prod-01.lib.tufts.edu
+      ;;
+  esac
+}
+
+function tdl {
+   case "${1}" in
+     'dev')
+       ssh tdl-dev-02.uit.tufts.edu
+       ;;
+     'stage')
+       ssh tdl-stage-02.uit.tufts.edu
+       ;;
+     *)
+       ssh tdl-prod-02.uit.tufts.edu
+       ;;
+   esac
+}
+
+function trove  {
+  case "${1}" in
+    'dev')
+      ssh tdil-dev-01.lib.tufts.edu
+      ;;
+    *)
+      ssh tdil-prod-01.lib.tufts.edu
+      ;;
+  esac
+}
+
+function elections {
+  case "${1}" in
+    'dev')
+      ssh mhf-dev-01.lib.tufts.edu
+      ;;
+    *)
+      ssh mhf-prod-01.lib.tufts.edu
+      ;;
+  esac
+}
+
+function cider {
+  ssh dcaint-prod-01.lib.tufts.edu
+}
+
+function dark {
+  case "${1}" in
+    'dev')
+      ssh tdlda-dev-02.lib.tufts.edu
+      ;;
+    *)
+      ssh tdlda-prod-02.lib.tufts.edu
+      ;;
+  esac
+}
+
+function corpora {
+  case "${1}" in
+    'dev')
+      ssh corpora-dev-01.lib.tufts.edu
+      ;;
+    *)
+      ssh corpora-prod-01.lib.tufts.edu
+      ;;
+  esac
+}
+
+function streets {
+  ssh tdlbst-prod-01.lib.tufts.edu
+}
+
+function fed {
+  case "${1}" in
+    'dev')
+      ssh tdrfedora-dev-01.uit.tufts.edu
+      ;;
+    *)
+      ssh tdrfedora-prod-01.uit.tufts.edu
+      ;;
+  esac
+}
+
+function fed3 {
+  case "${1}" in
+    'dev')
+      ssh tdl-dev-02.uit.tufts.edu
+      ;;
+    'stage')
+      ssh tdl-stage-02.uit.tufts.edu
+      ;;
+    *)
+      ssh tdl-prod-02.uit.tufts.edu
+      ;;
+  esac
+}
+
+function solr {
+  case "${1}" in
+    'dev')
+      ssh tdrsearch-dev-01.uit.tufts.edu
+      ;;
+    *)
+      ssh tdrsearch-prod-01.uit.tufts.edu
+      ;;
+  esac
+}
+
