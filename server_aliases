@@ -39,7 +39,7 @@ function trove  {
   esac
 }
 
-function elections {
+function election {
   case "${1}" in
     'dev')
       ssh mhf-dev-01.lib.tufts.edu
