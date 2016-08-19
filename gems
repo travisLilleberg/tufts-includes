@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# @file
+# Switches us to the currently used gems directory
+
+function gems {
+  cd $(rvm gemdir)
+  if [ -d gems ]; then
+    cd gems
+  fi
+}
+
