@@ -116,3 +116,13 @@ function solr {
   esac
 }
 
+function spot {
+  case "${1}" in
+    'dev')
+      ssh spotlightweb-dev-01.uit.tufts.edu 
+      ;;
+    *)
+      ssh spotlightweb-prod-01.uit.tufts.edu 
+  esac
+}
+

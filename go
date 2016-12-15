@@ -32,6 +32,18 @@ function go {
       "mc")
         cd ${site_loc}/marvel_companion
         ;;
+      "tc")
+        cd ${site_loc}/tufts_concerns
+        ;;
+      "ts")
+        cd ${site_loc}/tufts-spotlight
+        ;;
+      "tom")
+        cd /Library/Tomcat
+        ;;
+      "solr")
+        cd /usr/local/solr
+        ;;
       *)
         bad_msg "${1} is not a valid sitename."
         ;;
