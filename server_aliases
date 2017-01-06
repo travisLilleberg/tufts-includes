@@ -39,13 +39,24 @@ function trove  {
   esac
 }
 
-function election {
+function nnv {
   case "${1}" in
     'dev')
       ssh mhf-dev-01.lib.tufts.edu
       ;;
     *)
       ssh mhf-prod-01.lib.tufts.edu
+      ;;
+  esac
+}
+
+function nnv2 {
+  case "${1}" in
+    'dev')
+      ssh elections-dev-01.lib.tufts.edu
+      ;;
+    *)
+      
       ;;
   esac
 }
