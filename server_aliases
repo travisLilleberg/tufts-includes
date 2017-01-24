@@ -56,7 +56,7 @@ function nnv2 {
       ssh elections-dev-01.lib.tufts.edu
       ;;
     *)
-      
+      ssh elections-prod-01.lib.tufts.edu
       ;;
   esac
 }
