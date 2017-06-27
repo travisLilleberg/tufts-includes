@@ -38,6 +38,9 @@ function go {
       "ts")
         cd ${site_loc}/tufts-spotlight
         ;;
+      "ntdl")
+        cd ${site_loc}/tdl_f4
+        ;;
       "tom")
         cd /Library/Tomcat
         ;;
