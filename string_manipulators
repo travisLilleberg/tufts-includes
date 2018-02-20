@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# @file
+# Functions to make sed easier.
+
+function replace {
+  if [ -z "${1}" ] || [ -z "${2}" ] || [ -z "${3}" ]; then
+    bad_msg "replace:: I need a find-string, replace-string, and file to edit."
+    return 1
+  fi
+
+  sed -i '' "s|${1}|${2}|g" ${3}
+}
+
+
+function append {
+  if [ -z "${1}" ] || [ -z "${2}" ] || [ -z "${3}" ]; then
+    bad_msg "append:: I need a regex to append after, a string to append, and a file to edit."
+    return 1
+  fi
+
+  sed -i '' "/${1}/ a\\
+${2}
+" ${3}
+}
+
+function delete {
+  if [ -z "${1}" ]; then
+    bad_msg "delete:: I need string to delete."
+    return 1
+  fi
+}
