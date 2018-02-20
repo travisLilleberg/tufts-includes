@@ -39,7 +39,7 @@ function go {
         cd ${site_loc}/tufts-spotlight
         ;;
       "ntdl")
-        cd ${site_loc}/tdl_f4
+        cd ${site_loc}/tdl_on_hyrax
         ;;
       "tom")
         cd /Library/Tomcat

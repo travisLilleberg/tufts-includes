@@ -90,6 +90,17 @@ function cider {
 function dark {
   case "${1}" in
     'dev')
+      ssh tdrdark-dev-01.uit.tufts.edu
+      ;;
+    *)
+      ssh tdrdark-prod-01.uit.tufts.edu
+      ;;
+  esac
+}
+
+function old_dark {
+  case "${1}" in
+    'dev')
       ssh tdlda-dev-02.lib.tufts.edu
       ;;
     *)
