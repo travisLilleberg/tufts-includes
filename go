@@ -20,7 +20,7 @@ function go {
       "trv")
         cd ${site_loc}/tufts-image-library
         ;;
-      "el")
+      "nnv")
         cd ${site_loc}/tufts-election
         ;;
       "tdn")
@@ -33,7 +33,7 @@ function go {
         cd ${site_loc}/marvel_companion
         ;;
       "tc")
-        cd ${site_loc}/tufts_concerns
+        cd ${site_loc}/tufts-curation
         ;;
       "ts")
         cd ${site_loc}/tufts-spotlight

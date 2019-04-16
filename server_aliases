@@ -17,7 +17,7 @@ function mira {
 function mira2 {
   case "${1}" in
     'dev')
-      ssh tdrmira-stage-01.uit.tufts.edu
+      ssh tdrmira-dev-01.uit.tufts.edu
       ;;
     *)
       ssh tdrmira-prod-01.uit.tufts.edu
@@ -61,18 +61,18 @@ function trove  {
   esac
 }
 
-function nnv {
+function trove2  {
   case "${1}" in
     'dev')
-      ssh mhf-dev-01.lib.tufts.edu
+      ssh tdil-dev-02.lib.tufts.edu
       ;;
     *)
-      ssh mhf-prod-01.lib.tufts.edu
+      ssh tdil-prod-02.lib.tufts.edu
       ;;
   esac
 }
 
-function nnv2 {
+function nnv {
   case "${1}" in
     'dev')
       ssh elections-dev-01.lib.tufts.edu
