@@ -17,20 +17,8 @@ function go {
       "func")
         cd ${HOME}/.bash_functions
         ;;
-      "trv")
-        cd ${site_loc}/tufts-image-library
-        ;;
       "nnv")
         cd ${site_loc}/tufts-election
-        ;;
-      "tdn")
-        cd ${site_loc}/tufts_data_normalization
-        ;;
-      "mod")
-        cd ${site_loc}/tufts_models
-        ;;
-      "mc")
-        cd ${site_loc}/marvel_companion
         ;;
       "tc")
         cd ${site_loc}/tufts-curation
@@ -38,8 +26,14 @@ function go {
       "ts")
         cd ${site_loc}/tufts-spotlight
         ;;
-      "ntdl")
+      "tdl")
         cd ${site_loc}/tdl_on_hyrax
+        ;;
+      "mira")
+        cd ${site_loc}/epigaea
+        ;;
+      "trv")
+        cd ${site_loc}/trove
         ;;
       "tom")
         cd /Library/Tomcat
