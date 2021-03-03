@@ -6,17 +6,6 @@
 function mira {
   case "${1}" in
     'dev')
-      ssh hyd-dev-01.lib.tufts.edu
-      ;;
-    *)
-      ssh hyd-prod-01.lib.tufts.edu
-      ;;
-  esac
-}
-
-function mira2 {
-  case "${1}" in
-    'dev')
       ssh tdrmira-dev-01.uit.tufts.edu
       ;;
     *)
@@ -28,20 +17,6 @@ function mira2 {
 function tdl {
    case "${1}" in
      'dev')
-       ssh tdl-dev-02.uit.tufts.edu
-       ;;
-     'stage')
-       ssh tdl-stage-02.uit.tufts.edu
-       ;;
-     *)
-       ssh tdl-prod-02.uit.tufts.edu
-       ;;
-   esac
-}
-
-function tdl2 {
-   case "${1}" in
-     'dev')
        ssh tdl-dev-01.uit.tufts.edu
        ;;
      *)
@@ -51,17 +26,6 @@ function tdl2 {
 }
 
 function trove  {
-  case "${1}" in
-    'dev')
-      ssh tdil-dev-01.lib.tufts.edu
-      ;;
-    *)
-      ssh tdil-prod-01.lib.tufts.edu
-      ;;
-  esac
-}
-
-function trove2  {
   case "${1}" in
     'dev')
       ssh tdil-dev-02.lib.tufts.edu
@@ -83,10 +47,6 @@ function nnv {
   esac
 }
 
-function cider {
-  ssh dcaint-prod-01.lib.tufts.edu
-}
-
 function dark {
   case "${1}" in
     'dev')
@@ -94,28 +54,6 @@ function dark {
       ;;
     *)
       ssh tdrdark-prod-01.uit.tufts.edu
-      ;;
-  esac
-}
-
-function old_dark {
-  case "${1}" in
-    'dev')
-      ssh tdlda-dev-02.lib.tufts.edu
-      ;;
-    *)
-      ssh tdlda-prod-02.lib.tufts.edu
-      ;;
-  esac
-}
-
-function corpora {
-  case "${1}" in
-    'dev')
-      ssh corpora-dev-01.lib.tufts.edu
-      ;;
-    *)
-      ssh corpora-prod-01.lib.tufts.edu
       ;;
   esac
 }
@@ -131,20 +69,6 @@ function fed {
       ;;
     *)
       ssh tdrfedora-prod-01.uit.tufts.edu
-      ;;
-  esac
-}
-
-function fed3 {
-  case "${1}" in
-    'dev')
-      ssh tdl-dev-02.uit.tufts.edu
-      ;;
-    'stage')
-      ssh tdl-stage-02.uit.tufts.edu
-      ;;
-    *)
-      ssh tdl-prod-02.uit.tufts.edu
       ;;
   esac
 }
@@ -170,3 +94,12 @@ function spot {
   esac
 }
 
+function spot8 {
+  case "${1}" in
+    'dev')
+      ssh spotlight-dev-01.it.tufts.edu
+      ;;
+    *)
+      ssh spotlight-prod-01.it.tufts.edu
+  esac
+}
